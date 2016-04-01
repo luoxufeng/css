@@ -35,4 +35,28 @@ display:inline-block         IE7
 tab.html 结合jquery和understore做的一个tab切换Demo
 autoswitch.html  单张图片自动切换
 
+标准文档流:
+     从上到下,从左到右
+     由块级元素和行内元素组成.
 
+块级元素:div,ul.li dl,dt,p等
+行级元素：span,strong,img,input等
+
+块级元素和行内元素都是盒子模型；
+
+margin,border,padding,content
+盒子模型的尺寸=margin+border+padding+content
+
+
+浮动布局：
+特点：元素会向左，或右移动，直到碰到容器为止；
+设置的浮动元素，仍然处在标准文档流中
+
+设置为浮动后，
+1）自身元素的宽度随着内容的变化而变化
+2）会对相邻的元素产生影响，相邻元素特指紧邻后面的元素。
+
+
+清除浮动的常用方法：
+1）clear:both (对受到影响的元素进行设置)
+2) 同时设置width:100%(或者固定宽度)+overflow:hidden;(对受到影响的元素进行设置)
